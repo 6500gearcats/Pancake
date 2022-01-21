@@ -29,12 +29,12 @@ public class Robot extends TimedRobot {
   //private final CANSparkMax m_rightMotor= new CANSparkMax(2, MotorType.kBrushed);
 
 
-  SpeedController m_frontLeft = new SparkMaxWrapper(1, MotorType.kBrushed);
-  SpeedController m_rearLeft = new SparkMaxWrapper(2, MotorType.kBrushed);
+  SpeedController m_frontLeft = new SparkMaxWrapper(2, MotorType.kBrushed);
+  SpeedController m_rearLeft = new SparkMaxWrapper(4, MotorType.kBrushed);
   SpeedControllerGroup m_left = new SpeedControllerGroup(m_frontLeft, m_rearLeft);
 
-  SpeedController m_frontRight = new SparkMaxWrapper(3, MotorType.kBrushed);
-  SpeedController m_rearRight = new SparkMaxWrapper(4, MotorType.kBrushed);
+  SpeedController m_frontRight = new SparkMaxWrapper(1, MotorType.kBrushed);
+  SpeedController m_rearRight = new SparkMaxWrapper(3, MotorType.kBrushed);
   SpeedControllerGroup m_right = new SpeedControllerGroup(m_frontRight, m_rearRight);
   
   private final DifferentialDrive m_robotDrive = new DifferentialDrive(m_left, m_right);
