@@ -28,6 +28,7 @@ public class Robot extends TimedRobot {
   //private final CANSparkMax m_leftMotor= new CANSparkMax(1, MotorType.kBrushed);
   //private final CANSparkMax m_rightMotor= new CANSparkMax(2, MotorType.kBrushed);
 
+  //This is Kira's version
 
   SpeedController m_frontLeft = new SparkMaxWrapper(1, MotorType.kBrushed);
   SpeedController m_rearLeft = new SparkMaxWrapper(2, MotorType.kBrushed);
